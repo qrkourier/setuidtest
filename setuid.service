@@ -5,6 +5,6 @@ User=root
 Group=ziti
 # AmbientCapabilities=CAP_NET_ADMIN
 # CapabilityBoundingSet=CAP_NET_ADMIN,CAP_SETUID,CAP_SETGID
-# SecureBits=keep-caps
+SecureBits=keep-caps
 ExecStart=/home/kbingham/Sites/netfoundry/github/setuid-lab/setuidtest
 Restart=no
