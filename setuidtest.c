@@ -35,7 +35,7 @@ void print_caps() {
 
 int main (int argc, char *argv[]) {
     system("/usr/bin/id");
-    system("/bin/grep '^Cap' /proc/self/status");
+    system("/usr/sbin/capsh --print");
     print_caps();
     struct passwd *pw;
     // errno = 0;
@@ -50,6 +50,6 @@ int main (int argc, char *argv[]) {
     }
     system("/usr/bin/env");
     system("/usr/bin/id");
-    system("/bin/grep '^Cap' /proc/self/status");
+    system("/usr/sbin/capsh --print");
     print_caps();
 }
